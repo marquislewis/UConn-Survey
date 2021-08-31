@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">UConn Computer Science Survey Form</h1>
+            <p id="description">Thank you for sharing your thoughts on the program!</p>
+        </div>
+        <form class="survey-form" id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="What's your name?" required/>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="text" name="Email" id="Email" class="form-control" placeholder="What's your student email?" required/>
+            </div>
+
+            <div class="form-group">
+                <label id="netID-label" for="netID">NetID</label>
+                <input type="text" name="netID" id="netID" class="form-control" placeholder="What's your NetID?" required/>
+            </div>
+                
+            <div class="form-group">
+                <label id="year-select" for="year">Class Year</label>
+                <select id="year" name="year" class="custom-select">
+                    <option disabled selected value>Select your class year</option>
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophmore">Sophmore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Would you recommend the program to a friend?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="Definetly" name="exampleRadios">
+                    <label class="form-check-label" for="Definetly">Definetly</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"  id="Maybe" name="exampleRadios">
+                    <label class="form-check-label" for="Maybe">Maybe</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="Not-sure" name="exampleRadios" >
+                    <label class="form-check-label" for="Not-sure">Not sure</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="No" name="exampleRadios" >
+                    <label class="form-check-label" for="No">No</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="Freshman" name="exampleRadios" >
+                    <label class="form-check-label" for="Freshman">I'm a freshman so I can't answer yet</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="form-check">What concentrations are you interested in doing or are doing?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Theory" name="concentrations">
+                    <label class="form-check-label" for="Theory">
+                      Theory and Algorithms
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Systems" name="concentrations">
+                    <label class="form-check-label" for="Systems">
+                      Systems and Networks
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Cybersecurity" name="concentrations">
+                    <label class="form-check-label" for="Cybersecurity">
+                      Cybersecurity
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Bioinformatics" name="concentrations">
+                    <label class="form-check-label" for="Bioinformatics">
+                        Bioinformatics
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Software" name="concentrations">
+                    <label class="form-check-label" for="Software">
+                      Software Design and Development
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Data" name="concentrations">
+                    <label class="form-check-label" for="Data">
+                      Computational Data Analytics
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Unspecialized" name="concentrations">
+                    <label class="form-check-label" for="Unspecialized">
+                        Unspecialized
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions about the program?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comments here"
+                ></textarea>
+              </div>
+
+            <button type="submit" id="submit" class="btn btn-dark btn-lg btn-block">
+                Submit
+              </button>
+            <p>Thank you for your time!</p>
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
